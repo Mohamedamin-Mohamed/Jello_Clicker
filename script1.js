@@ -1,4 +1,4 @@
-import { clickCounter, restartGame, domManipulation, continueGame} from './script.js';
+import { clickCounter, restartGame, domManipulation, continueGame} from './script2.js';
 
 /*
  * Files: Main.js                  
