@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #imageClicker{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:140px;
+    width:100px;
+    padding-left:40px;
+  }
+  #imageClicker:hover{
+    cursor:pointer;
+  }
+  .container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding-top: 120px;
+  }
+  .divs:nth-child(2){
+    text-align: center;
+    align-items: center;
+  }
+  .column1 .column3{
+    display:flex;
+    flex-direction:column;
+    
+  }
+  #scrollable-column1{
+     height:700px;
+    overflow-y: scroll;
+  }
+  .column1 .divs{
+    background-color:lightblue;
+  }
+  .column3 .divs{
+    background-color:darkgrey;
+  }
+  .column1 {
+    max-height:300px;
+    overflow-y:scroll;
+  }
+  .column3{
+    max-height:320px;
+    overflow-y:scroll;
+  }
+  .divs{
+    display:flex;
+    width: 100px;
+    height: 90px;
+    margin:5px;
+    text-align:center;
+    align-items:center;
+  }
+  #div5:hover{
+    cursor:pointer;
+    background-color:red;
+    animation: bounce 1s ease-in-out infinite;
+  }
+  .column3 > .divs:nth-child(2){
+    background-color: #aaaa46;
+  }
+  .column2{
+    padding-top:130px;
+    display:flex;
+  }
+  .label {
+    padding-top:1px;
+    display:none;
+  }
+  @keyframes bounce {
+    0%, 100% { 
+      transform: translateX(0); 
+    }
+    50% { 
+      transform: translateX(20px); 
+    } 
+  }
+  
+  .bouncing-text {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  
