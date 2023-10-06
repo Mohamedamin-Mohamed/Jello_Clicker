@@ -1,3 +1,17 @@
+import { clickCounter, restartGame, domManipulation, continueGame} from './script.js';
+
+/*
+ * Files: Main.js                  
+ * Author: Mohamedamin Mohamed          
+ * Contact mohamedamin204080@gmail.com  
+ * Created 09/26/2023                   
+ * Modified: 09/29/2023                    
+ * Description: File is an event handling script for the web-based clicker game. It handles the initialization of the game, tracks the number of clicks, and triggers various actions based on the click count. The script also manages alerts, DOM manipulation, and user interactions for restarting the game.             *
+ */
+
+/**
+ * Function to initialize and handle game events when the DOM is fully loaded.
+ */
 document.addEventListener("DOMContentLoaded", ()=>{
   
     let counter = 0;//will store the number of click counts
